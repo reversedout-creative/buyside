@@ -326,9 +326,6 @@ body {
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
-.hero-banner .btn {
-	margin-right: 10px;
-}
 .social-media {
 	margin-top: 20px;
 	display: block;
@@ -598,6 +595,7 @@ ul.slimmenu li.has-submenu:hover i{
 		margin: 0 auto;
 		width: 100%;
 		padding-top: 30px;
+		padding-left: 10px;
 	}
 	.rollover-all-box .rollover {
 		width: 49% !important;
@@ -637,6 +635,7 @@ ul.slimmenu li.has-submenu:hover i{
 		background: #3798ce;
 		max-width: 690px;
 		margin: 0 auto;
+		margin-top: 10px;
 	}
 	.main-menu .slimmenu li a {
 		border-bottom: 1px solid #eeeeee;
@@ -682,6 +681,9 @@ ul.slimmenu li.has-submenu:hover i{
 		padding-top: 10px;
 	}
 	.main-menu, .fixed-top .main-menu { margin-top: 10px; }
+	.hero-banner .btn a { margin-top: 0; }
+	.hero-banner p { margin-bottom: 10px; }
+
 	
 }
 @media(max-width: 767px){
