@@ -75,28 +75,28 @@
 
 <div class="rollover-all-box">
 
-    <div class="rollover box-pos">
+    <div class="rollover box-pos wow fadeInUp animated" data-wow-delay="0.2s">
         <div class="hover">
             <img src="images/header-icon.png" alt="image">
             <h5>saved a search on your brokerage site</h5>
         </div>
     </div>
     
-    <div class="rollover box-pos">
+    <div class="rollover box-pos wow fadeInUp animated" data-wow-delay="0.4s">
         <div class="hover">
             <img src="images/header-icon.png" alt="image">
             <h5>liked a property on Zillow </h5>
         </div>
     </div>
     
-    <div class="rollover box-pos">
+    <div class="rollover box-pos wow fadeInUp animated" data-wow-delay="0.6s">
         <div class="hover">
             <img src="images/header-icon.png" alt="image">
             <h5 >toured a home with an agent</h5>
         </div>
     </div>
     
-    <div class="rollover box-pos">
+    <div class="rollover box-pos wow fadeInUp animated" data-wow-delay="0.8s">
         <div class="hover">
             <img src="images/header-icon.png" alt="image">
             <h5>open house sign-in </h5>
@@ -391,6 +391,12 @@
 		$(".navbar-fixed-top").removeClass("fixed-top");
 	  }
 	});
+    </script>
+    
+    <script>
+		$('.hover img').hover(function(){ 
+		  $('.hover h5').toggleClass('show-text');
+		});
     </script>
 </body>
 </html>

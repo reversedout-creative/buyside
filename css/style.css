@@ -273,7 +273,10 @@ body {
 	min-height: 100% !important;
 	max-height: 100% !important;
 }
- 
+/*#demo-canvas {
+	min-height: 100%;
+	width: 100%;
+}*/
 /* ani Banner */
 .hero-banner {
 	background:#0d2142 /*url(../images/hero-banner.jpg) bottom center no-repeat*/;
@@ -495,8 +498,10 @@ ul.slimmenu li.has-submenu:hover i{
 	display: inline-block;
 }
 .rollover .one { bottom: 200px; left: 20px; z-index: 100; }
-.rollover .hover { opacity: 0; }
-.rollover:hover .hover { opacity: 1 !important; }
+.rollover .hover h5 { opacity: 0; position: relative; left: -15px; }
+.rollover:hover .hover h5.show-text { opacity: 1 !important; left: 0px; }
+.rollover .hover h5, 
+.rollover .hover h5.show-text,
 .rollover .hover,
 .rollover:hover .hover {
 	-webkit-transition: all 0.5s ease-in-out;
@@ -504,6 +509,7 @@ ul.slimmenu li.has-submenu:hover i{
          -o-transition: all 0.5s ease-in-out;
             transition: all 0.5s ease-in-out;
 }
+
 
 .rollover img { display: inline-block; vertical-align: middle }
 .rollover h5{ display: inline-block; vertical-align: middle; font-weight: 700; font-size: 18px; color: #a7bedd; }
@@ -611,6 +617,8 @@ ul.slimmenu li.has-submenu:hover i{
 		padding-left: 70px;
 		padding-top: 20px !important;
 	}
+	.rollover .hover h5 { opacity: 1; position: relative; left: 0px; }
+	.rollover:hover .hover h5.show-text { opacity: 1 !important; left: 0px; }
 }
 @media(max-width: 991px){
 	.hero-banner h1 {
