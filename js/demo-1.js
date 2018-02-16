@@ -24,8 +24,8 @@
         points = [];
         for(var x = 0; x < width; x = x + width/15) {
             for(var y = 0; y < height; y = y + height/15) {
-                var px = x + Math.random()*width/10;
-                var py = y + Math.random()*height/10;
+                var px = x + Math.random()*width/15;
+                var py = y + Math.random()*height/15;
                 var p = {x: px, originX: px, y: py, originY: py };
                 points.push(p);
             }
@@ -63,7 +63,7 @@
 
         // assign a circle to each point
         for(var i in points) {
-            var c = new Circle(points[i], 3+Math.random()*3, 'rgba(19,47,92,0.3)');
+            var c = new Circle(points[i], 2.5+Math.random()*2.5, 'rgba(19,47,92,0.3)');
             points[i].circle = c;
         }
     }
@@ -120,15 +120,15 @@
                 if(Math.abs(getDistance(target, points[i])) < 2000) {
                     points[i].active = 1;
                     points[i].circle.active = 1;
-                } else if(Math.abs(getDistance(target, points[i])) < 10000) {
-                    points[i].active =0.3;
-                    points[i].circle.active = 0.3;
+                } else if(Math.abs(getDistance(target, points[i])) < 20000) {
+                    points[i].active =0.5;
+                    points[i].circle.active = 0.5;
                 } else if(Math.abs(getDistance(target, points[i])) < 20000) {
                     points[i].active = 0.2;
                     points[i].circle.active = 0.2;
                 } else {
-                    points[i].active = 0.02;
-                    points[i].circle.active = 0.02;
+                    points[i].active = 0.08;
+                    points[i].circle.active = 0.08;
                 }
 
                 drawLines(points[i]);
@@ -139,8 +139,8 @@
     }
 
     function shiftPoint(p) {
-        TweenLite.to(p, 1+1*Math.random(), {x:p.originX-50+Math.random()*100,
-            y: p.originY-50+Math.random()*100, ease:Circ.easeInOut,
+        TweenLite.to(p, 1+1*Math.random(), {x:p.originX-15+Math.random()*30,
+            y: p.originY-15+Math.random()*30, ease:Circ.easeInOut,
             onComplete: function() {
                 shiftPoint(p);
             }});
@@ -153,7 +153,7 @@
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p.closest[i].x, p.closest[i].y);
-            ctx.strokeStyle = 'rgba(230,230,230,'+ p.active+')';
+            ctx.strokeStyle = 'rgba(176,198,223,'+ p.active+')';
             ctx.stroke();
         }
     }
@@ -172,8 +172,8 @@
             if(!_this.active) return;
             ctx.beginPath();
             ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(230,230,230,'+ _this.active+')';
-			ctx.strokeStyle = 'rgba(230,230,230,0.1)';
+            ctx.fillStyle = 'rgba(176,198,223,0.3'+ _this.active+')';
+			ctx.strokeStyle = 'rgba(176,198,223,)';
 			ctx.stroke();
 			ctx.fill();
         };
