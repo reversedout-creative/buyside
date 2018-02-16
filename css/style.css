@@ -118,6 +118,13 @@ input[type="submit"]:hover {
     color: #ffffff !important;
 	border-color: #4ea2d4;
 }
+.btn.white-btn a{
+	color:#fff;
+	border-color: #fff;
+}
+.btn.white-btn a:hover{
+	border-color: #4ea2d4;
+}
 a, .btn a, .btn a:hover, input[type="submit"], input[type="submit"]:hover{
 	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -203,7 +210,7 @@ body {
     font-size: 16px;
     overflow-x: hidden;
 }
-@media(max-width:767px){ .sections{ padding-top: 20px; padding-bottom: 20px; } }
+@media(max-width:767px){ .sections{ padding-top: 20px; padding-bottom: 30px; } }
 /* Go Top CSS */
 .go-up {
 	background: #0d2142;
@@ -269,10 +276,11 @@ body {
 	left:0;
 	right: 0;
 	bottom: 0;
-	height: 100% !important;
+	height:100% !important;
 	min-height: 100% !important;
 	max-height: 100% !important;
 }
+#large-header canvas{ width:100% !important; height:100% !important;}
 /*#demo-canvas {
 	min-height: 100%;
 	width: 100%;
@@ -336,8 +344,10 @@ body {
 .social-media li {
 	display: inline-block;
 	vertical-align: top;
-	width: 30px;
-	text-align: center;
+	margin-right:30px;
+}
+.social-media li:last-child {
+	margin-right:0;
 }
 .social-media li a {
 	font-size: 26px;
@@ -348,9 +358,6 @@ body {
 	color: #30d7c6;
 }
 .social-media li.image-icon {
-	height: 30px;
-	width: 30px;
-	overflow: hidden;
 	position: relative;
 }
 .social-media li.image-icon a img {
@@ -498,7 +505,7 @@ ul.slimmenu li.has-submenu:hover i{
 	display: inline-block;
 }
 .rollover .one { bottom: 200px; left: 20px; z-index: 100; }
-.rollover .hover h5 { opacity: 0; position: relative; left: -15px; }
+.rollover .hover h5 { opacity: 0; position: relative; left: -15px; text-transform:none; }
 .rollover:hover .hover h5.show-text { opacity: 1 !important; left: 0px; }
 .rollover .hover h5, 
 .rollover .hover h5.show-text,
@@ -511,7 +518,7 @@ ul.slimmenu li.has-submenu:hover i{
 }
 
 
-.rollover img { display: inline-block; vertical-align: middle }
+.rollover img { display: inline-block; vertical-align: middle; width:50px;}
 .rollover h5{ display: inline-block; vertical-align: middle; font-weight: 700; font-size: 18px; color: #a7bedd; }
 
 
@@ -539,13 +546,11 @@ ul.slimmenu li.has-submenu:hover i{
 	top: -40px;
 }
 .rollover-all-box .rollover:nth-child(4) {
-	left: 75%; width: 300px;
+	left: 78%; width: 250px;
 	top: -80px;
 }
 .rollover-all-box .rollover:nth-child(4) img,
 .rollover-all-box .rollover:nth-child(3) img { float: right; }
-.rollover-all-box .rollover:nth-child(4) h5,
-.rollover-all-box .rollover:nth-child(3) h5 { padding-top: 20px; }
 /* ================================================================================ */
 
 
@@ -847,15 +852,19 @@ ul.slimmenu li.has-submenu:hover i{
 
 /* ===================== Testimonials ==================== */
 .testmonials {
-	padding-top: 100px;
+	padding-top: 150px;
 	padding-bottom: 100px;
 }
 .testmonials  p {
-	font-size: 24px;
-	line-height: 32px;
+	font-size: 18px;
+	line-height: 24px;
 	font-style: italic;
 	font-weight: 400;
 }
+
+#Testimonials .media{ padding-top:30px;}
+#Testimonials .media .client-img{ width:72px; height:72px; border-radius:50%; overflow:hidden;}
+#Testimonials .media .client-img img{ width:100%; height:100%; object-fit:cover;}
 #Testimonials span.author-name,
 #Testimonials span.author-post {
 	display: block;
@@ -865,14 +874,12 @@ ul.slimmenu li.has-submenu:hover i{
 #Testimonials span.author-name {
 	font-weight: 800;
 	text-transform: uppercase;
-	padding-top: 30px;
 }
 #Testimonials span.author-post {
 	font-weight: 300;
 }
 #Testimonials .owl-buttons { display: none; }
 #Testimonials .owl-pagination { text-align: left; margin-top: 20px; }
-
 /*=====================================================
 				Our Customers
 =====================================================*/
@@ -968,7 +975,7 @@ ul.slimmenu li.has-submenu:hover i{
 	position: relative;
 }
 .contact p,
-.contact h2 {
+.contact h3 {
 	color: #ffffff;
 }
 .contact input[type="text"],
@@ -1030,7 +1037,6 @@ ul.slimmenu li.has-submenu:hover i{
 	padding-bottom: 0;
 	line-height: 48px;
 }
-
 .share-section {
 	background: #264c9e;
 	color: #ffffff;
@@ -1043,13 +1049,16 @@ ul.slimmenu li.has-submenu:hover i{
 }
 .share-section ul.social-media li a { color: #79caf3; }
 .share-section ul.social-media li a:hover{ color: #ffffff; }
- 
+
+.contact ul.social-media li a { color: #79caf3; font-size:46px; }
+.contact ul.social-media li a:hover{ color: #ffffff; }
+.contact .col-lg.social-share { padding: 0; } 
 /*=======================================================
 			Footer
 ========================================================*/
 .footer{
 	background-color:white;
-    padding:15px 0;
+    padding:10px 0;
 	}
 .footer .copyright{
 	margin:0px;
@@ -1125,6 +1134,9 @@ ul.slimmenu li.has-submenu:hover i{
 	.services {
 		padding-bottom: 20px;
 	}
+	.contact ul.social-media li a {	
+		font-size: 36px;
+	}
 }
 @media(max-width: 767px) {
 	.boxes {
@@ -1141,7 +1153,7 @@ ul.slimmenu li.has-submenu:hover i{
 	}
 	.testmonials {
 		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-bottom: 70px;
 	}
 	.testmonials p {
 		font-size: 18px;
@@ -1190,9 +1202,58 @@ ul.slimmenu li.has-submenu:hover i{
 	.services { padding-bottom: 30px; }
 	.services .btn { margin-top: 0; }
 	.our_customers h4 { padding-bottom: 15px; }
+	.contact ul.social-media li{
+		margin-right:20px;
+	}
+	.contact ul.social-media li a {	
+		font-size: 26px;
+	}
 }
 
 @media(max-width: 575px){
+	.rollover-all-box .rollover h5{
+	}
+	.rollover-all-box .rollover:nth-child(4) img{
+		right:5%;
+		left:inherit;
+	}
+	.rollover-all-box .rollover:nth-child(4) h5{
+		position:absolute;
+		right:13%;
+		left:inherit;
+	}
+	.rollover-all-box .rollover:nth-child(2) img{
+		right:12%;
+		left:inherit;
+	}
+	.rollover-all-box .rollover:nth-child(2) h5{
+		position:absolute;
+		right:20%;
+		left:inherit;
+	}
+	.rollover-all-box .rollover:nth-child(3) img{
+		left:13%;
+	}
+	.rollover-all-box .rollover:nth-child(3) h5{
+		position:absolute;
+		left:13%;
+	}
+	.rollover:hover .hover h5.show-text { opacity: 1 !important; left: inherit; }
+	.rollover-all-box .rollover{
+		min-height:50px;
+	}	
+	.sections.testmonials{
+		position:relative;
+	}
+	.sections.testmonials:before{
+		content:'';
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		background:rgba(255,255,255,0.7);
+	}
 	.footer .copyright {
 		text-align: center;
 	}
@@ -1213,5 +1274,63 @@ ul.slimmenu li.has-submenu:hover i{
 		padding-top: 0;
 		padding-bottom: 60px;
 	}
+	.social-media{
+		margin-top:10px;
+	}
 
 }
+@media(max-width: 420px){
+	.hover img {
+		width: 40px;
+	}
+	.rollover-all-box .rollover:nth-child(2) h5{
+		position:absolute;
+		right:21%;
+		left:inherit;
+		padding-left:20px;
+	}
+	.rollover-all-box .rollover h5{
+		font-size:12px;
+		line-height:20px;
+		padding-left:45px;
+	}
+	.rollover-all-box .rollover:nth-child(4) h5{
+		position:absolute;
+		right:14%;
+		left:inherit;
+	}
+	.rollover-all-box .rollover:nth-child(3) img{
+		left:13%;
+	}
+	.rollover-all-box .rollover{
+		min-height:45px;
+	}
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////// PLATFORM Page CSS  ///////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.visualization .boxes .service-icon{
+	vertical-align:top;
+	margin-right:20px;
+}
+.visualization .boxes h4 {
+	display:inline-block;
+    margin: 0 auto;
+    color: #0d2142;
+    line-height: 35px;
+}
+.services.visualization .row .boxes:nth-child(2) .service-icon {
+    background: #30d7c6;
+}
+.visualization .boxes h4 span {
+    color: #30d7c6;
+}
+.visualization  p {
+    max-width: 100%;
+	padding-top:15px;
+
+}
+
+
