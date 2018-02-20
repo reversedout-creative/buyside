@@ -1438,8 +1438,9 @@ ul.slimmenu li.has-submenu:hover i{
 	left: 0;
 	right: 0;
 	margin: 0 auto;
+	text-align: center;
 	z-index: 40;
-	height: 202px;
+	height: 204px;
 	overflow: hidden;
 	max-width: 1024px;
 	width: 100%;
@@ -1448,7 +1449,7 @@ ul.slimmenu li.has-submenu:hover i{
 	margin: 0 auto;
 }
 #New_Line2 .st0, 
-#New_Line .st0 { stroke-width: 4; }
+#New_Line .st0 { stroke-width: 10; }
 #New_Line2 {
 	position: absolute;
 	top: 420px;
@@ -1456,7 +1457,7 @@ ul.slimmenu li.has-submenu:hover i{
 	right: 0;
 	margin: 0 auto;
 	z-index: 40;
-	height: 169px;
+	height: 174px;
 	overflow: hidden;
 	max-width: 1024px;
 	width: 100%;
