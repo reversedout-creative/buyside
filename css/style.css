@@ -619,8 +619,8 @@ ul.slimmenu li.has-submenu:hover i{
 		top: 0;
 	}
 	.rollover-all-box .rollover h5 {
-		padding-left: 70px;
-		padding-top: 20px !important;
+		padding-left: 60px;
+		padding-top: 5px !important;
 	}
 	.rollover .hover h5 { opacity: 1; position: relative; left: 0px; }
 	.rollover:hover .hover h5.show-text { opacity: 1 !important; left: 0px; }
@@ -696,8 +696,6 @@ ul.slimmenu li.has-submenu:hover i{
 	.main-menu, .fixed-top .main-menu { margin-top: 10px; }
 	.hero-banner .btn a { margin-top: 0; }
 	.hero-banner p { margin-bottom: 10px; }
-
-	
 }
 @media(max-width: 767px){
 	.logo a {
@@ -1539,8 +1537,18 @@ ul.slimmenu li.has-submenu:hover i{
 		padding-top: 10px;
 	}
 	.services.sections.visualization.listings {
-		padding-top: 100px;
+		padding-top: 80px;
 		padding-bottom: 100px;
+	}
+	.services:after {
+		bottom: -60px;
+		left: -60px;
+		content: ' ';
+		height: 60px;
+		z-index: 10;
+		border-right: solid 2000px #ffffff;
+		border-bottom: solid 60px transparent;
+		border-top: solid 0px transparent;
 	}
 }
 
