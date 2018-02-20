@@ -498,6 +498,9 @@ ul.slimmenu li.has-submenu:hover i{
 .main-menu ul li.has-submenu ul li a{
 	color: #ffffff !important;
 }
+.internal-contact .container{
+	padding-top: 50px;
+}
 
 /* ================================================================================ */
 
@@ -1653,6 +1656,10 @@ ul.slimmenu li.has-submenu:hover i{
 	}
 	.services.sections.visualization.listings {
 		padding-bottom: 50px;
+	}
+	#Contact .col-sm-6:first-child .head_text {
+		border-bottom: 1px solid #1459a5;
+		padding-bottom: 20px;
 	}
 }
 @media(max-width: 420px){
