@@ -498,9 +498,6 @@ ul.slimmenu li.has-submenu:hover i{
 .main-menu ul li.has-submenu ul li a{
 	color: #ffffff !important;
 }
-.internal-contact .container{
-	padding-top: 50px;
-}
 
 /* ================================================================================ */
 
@@ -1381,6 +1378,7 @@ ul.slimmenu li.has-submenu:hover i{
 .more-sides .boxes h4 span {
     color: #ff931f;
 }
+.more-sides.services { padding-bottom: 70px; }
 .pt-10{ padding-top:170px; }
 .services.sections.visualization.more-sides:before{
     top: -70px;
@@ -1389,12 +1387,25 @@ ul.slimmenu li.has-submenu:hover i{
 	border-bottom: solid 0px transparent;
 	border-top: solid 50px transparent;
 }
-.services.sections.visualization.more-sides:after{
+/*.services.sections.visualization.more-sides:after{
 	bottom:-50px;
 	height:70px;
 	border-left: solid 2000px #ffffff;
 	border-bottom: solid 60px transparent;
 	border-top: solid 0px transparent;
+}*/
+.services.sections.visualization.more-sides:after {
+	position: absolute;
+	bottom : 0px;
+	left: -100px;
+	right: 0;
+	content: ' ';
+	height: 100px;
+	z-index: 10;	
+	width: 100%;
+	border-right: solid 2000px #1a63b4;
+	border-bottom: solid 0px transparent;
+	border-top: solid 100px transparent;
 }
 /* ----- Scroll animation CSS ----- */
 .straightLine {
@@ -1622,6 +1633,11 @@ ul.slimmenu li.has-submenu:hover i{
 		padding-bottom: 0;
 		min-height: 35px;
 	}
+	.more-sides.services { padding-bottom: 40px; }
+	.internal-banner h4 {
+		font-size: 20px;
+		line-height: 28px;
+	}
 }
 @media(max-width: 575px){
 	.rollover-internal-page {
@@ -1661,6 +1677,7 @@ ul.slimmenu li.has-submenu:hover i{
 		border-bottom: 1px solid #1459a5;
 		padding-bottom: 20px;
 	}
+	.more-sides.services { padding-bottom: 20px; }
 }
 @media(max-width: 420px){
 	.rollover-internal-page.rollover-all-box .rollover h5 {
