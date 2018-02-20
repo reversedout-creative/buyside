@@ -237,7 +237,7 @@ body {
 }	
 .go-up:hover {
 	transition:all 0.3s ease-in-out;
-	background-color: #264c9e;
+	background-color: #30d7c6;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 									Normal CSS
@@ -424,7 +424,7 @@ ul.slimmenu {
 }
 ul.slimmenu li.active span.sub-toggle i,
 ul.slimmenu li.active a {
-	color: #76c4d5;
+	color: #30d7c6;
 }
 ul.slimmenu li.active ul li a{
 	color: #ffffff;
@@ -1311,6 +1311,32 @@ ul.slimmenu li.has-submenu:hover i{
 /*////////////////////////////////////////// PLATFORM Page CSS  ///////////////////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+/* RollOver */
+.hero-banner.internal-banner {
+	padding-bottom: 200px;
+}
+.rollover-internal-page {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.internal-banner h4 {
+	line-height: 38px;
+	margin: 0 auto;
+	max-width: 900px;
+}
+.rollover-internal-page {
+	margin-top: 80px;
+	padding-bottom: 200px;
+}
+.rollover-internal-page .rollover .hover h5 {
+	opacity: 1;
+	left: 0;
+}
+.rollover-internal-page.rollover-all-box .rollover:nth-child(4) { width: 450px; left: 50%; }
+.rollover-internal-page.rollover-all-box .rollover:nth-child(1) { top: 0; }
+.rollover-internal-page.rollover-all-box .rollover:nth-child(2) { top: 120px; left: 35%; }
+.rollover-internal-page.rollover-all-box .rollover:nth-child(3) { top: 60px; left: 55%; }
+/* RollOver */
 .visualization .boxes .service-icon{
 	vertical-align:top;
 	margin-right:20px;
@@ -1332,5 +1358,309 @@ ul.slimmenu li.has-submenu:hover i{
 	padding-top:15px;
 
 }
+.services.sections.visualization.listings{
+	background:#f0f0f0;
+	padding:150px 0;
+}
+.services.sections.visualization.listings:before,
+.services.sections.visualization.listings:after{
+	display:none;
+}
+.services.listings .row .boxes:nth-child(2) .service-icon {
+    background: #e34675;
+}
+.listings .boxes h4 span {
+    color: #e34675;
+}
+.services.more-sides .row .boxes:nth-child(2) .service-icon {
+    background: #ff931f;
+}
+.more-sides .boxes h4 span {
+    color: #ff931f;
+}
+.pt-10{ padding-top:170px; }
+.services.sections.visualization.more-sides:before{
+    top: -70px;
+    height: 70px;
+	border-left: solid 2000px #ffffff;
+	border-bottom: solid 0px transparent;
+	border-top: solid 50px transparent;
+}
+.services.sections.visualization.more-sides:after{
+	bottom:-50px;
+	height:70px;
+	border-left: solid 2000px #ffffff;
+	border-bottom: solid 60px transparent;
+	border-top: solid 0px transparent;
+}
+/* ----- Scroll animation CSS ----- */
+.straightLine {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -5px;
+	z-index: 150;
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+}
+.straightLine svg {
+	width: 1100px;
+	margin: 0 auto;
+}
+.st0{ fill:none; stroke:#30d7c6; stroke-width:2; stroke-miterlimit:10; }
+/* ----- /Scroll animation CSS ------ */
+.visualization { padding-top: 0; }
+.visualization .boxes {
+	border: none;
+}
+.visualization .boxes:hover .service-icon {
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+		 -o-transform: scale(1);
+	    	transform: scale(1);
+}
+#New_Line {
+	position: absolute;
+	top: 267px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 40;
+	height: 202px;
+	overflow: hidden;
+	max-width: 1024px;
+	width: 100%;
+}
+#New_Line svg {
+	margin: 0 auto;
+}
+#New_Line2 .st0, 
+#New_Line .st0 { stroke-width: 4; }
+#New_Line2 {
+	position: absolute;
+	top: 420px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 40;
+	height: 169px;
+	overflow: hidden;
+	max-width: 1024px;
+	width: 100%;
+}
+.contain-box {
+	position: relative;
+}
+.contain-box .service-icon {
+	position: absolute;
+	left: 15px;
+	top: 0;
+}
+.contain-box h4 {
+	padding-left: 75px;
+	min-height: 70px;
+	padding-top: 15px;
+}
+@media(max-width: 1200px){
+	.hide-1200 { display: none;	}
+	.hero-banner.internal-banner { padding-bottom: 100px; }
+	.services .service-icon {
+		height: 54px;
+		width: 54px;
+		line-height: 54px;
+	}
+	.services .service-icon img {
+		width: 40px;
+	}
+	.visualization .contain-box h4 {
+		font-size: 24px;
+		line-height: 30px;
+		padding-top: 10px;
+		padding-left: 65px;
+	}
+}
+@media(max-width: 1025px){
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(1){
+		left: 0;
+		top: 0;
+		width: auto;
+	}
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(2){
+		left: 5%;
+		top: 0;
+		width: auto;
+	}
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(3){
+		left: 20%;
+		top: 0;
+		width: auto;
+	}
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(4){
+		left: 0%;
+		top: 50px;
+		width: auto;
+	}	
+	.rollover-internal-page.rollover-all-box .rollover h5 {	padding-top: 10px !important; }
+	.rollover-internal-page {
+		margin-top: 20px;
+		padding-bottom: 40px;
+	}
+}
+@media(max-width: 991px){
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(2) {
+		left: 0;
+		top: 0;
+		width: auto;
+	}
+	.rollover-internal-page.rollover-all-box .rollover h5 {
+		padding-left: 55px;
+		font-size: 16px;
+		line-height: 24px;
+	}	
+	.visualization .contain-box h4 {
+		padding-top: 0px;
+	}
+	.visualization.listings .contain-box h4 {
+		padding-top: 10px;
+	}
+	.services.sections.visualization.listings {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+}
 
-
+@media(max-width: 767px){
+	.hero-banner.internal-banner {
+		padding-bottom: 60px;
+	}
+	.rollover-all-box.rollover-internal-page .rollover {
+		width: 100% !important;
+	}
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(4) img{
+		right:5%;
+		left:inherit;
+	}
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(4) h5{
+		position:absolute;
+		right:13%;
+		left:inherit;
+	}
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(2) {
+		text-align: right;
+	}
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(2) img{
+		right:12%;
+		left:inherit;
+	}
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(2) h5{
+		position:absolute;
+		right:20%;
+		left:inherit;
+		padding-left: 0;
+	}
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(3) { left: 0%; }
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(3) img{
+		left:13%;
+	}
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(3) h5{
+		position:absolute;
+		left:13%;
+	}
+	.rollover-internal-page.rollover-all-box .rollover:nth-child(4){
+		left: 0%;
+		top: 0;
+		width: auto;
+		text-align: right;
+	}
+	.rollover-internal-page.rollover:hover .hover h5.show-text { opacity: 1 !important; left: inherit; }
+	.rollover-internal-page.rollover-all-box .rollover{
+		min-height:50px;
+	}
+	.rollover-internal-page {
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}	
+	.visualization {
+		padding-top: 30px;
+	}
+	.contain-box {
+		margin-top: 40px;
+	}
+	.contain-box .service-icon {
+		margin-top: 15px;
+	}
+	.visualization .contain-box h4 {
+		min-height: 50px;
+		padding-left: 55px;
+	}
+	.visualization.listings .contain-box h4 {
+		padding-top: 0;
+	}
+	.services .service-icon {
+		height: 45px;
+		width: 45px;
+		line-height: 45px;
+	}
+	.services .service-icon img {
+		width: 37px;
+	}
+	.services.sections.visualization.listings {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.visualization {
+		padding-bottom: 0;
+	}
+	.services.visualization.more-sides {
+		padding-top: 0;
+	}
+	.visualization .contain-box h4 {
+		padding-bottom: 0;
+		min-height: 35px;
+	}
+}
+@media(max-width: 575px){
+	.rollover-internal-page {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	.services .service-icon {
+		height: 30px;
+		width: 30px;
+		line-height: 30px;
+	}
+	.services .service-icon img {
+		width: 20px;
+	}
+	.visualization .contain-box h4,
+	.more-sides.services h4 {
+		padding-top: 0;
+		padding-left: 40px;
+		font-size: 20px;
+		line-height: 24px;
+		min-height: inherit;
+	}
+	.contain-box .service-icon {
+		margin-top: 15px;
+	}
+	.contain-box {
+		margin-top: 0;
+	}
+	.services.sections.visualization.more-sides::before {
+		top: -50px;
+		height: 40px;
+	}
+	.services.sections.visualization.listings {
+		padding-bottom: 50px;
+	}
+}
+@media(max-width: 420px){
+	.rollover-internal-page.rollover-all-box .rollover h5 {
+		padding-top: 5px !important;
+		font-size: 14px;
+		line-height: 20px;
+		padding-left: 45px;
+		padding-top: 10px !important;
+	}
+}
