@@ -139,8 +139,8 @@
     }
 
     function shiftPoint(p) {
-        TweenLite.to(p, 1+1*Math.random(), {x:p.originX-15+Math.random()*30,
-            y: p.originY-15+Math.random()*30, ease:Circ.easeInOut,
+        TweenLite.to(p, 1.5+1.5*Math.random(), {x:p.originX-8+Math.random()*15,
+            y: p.originY-8+Math.random()*15, ease:Circ.easeInOut,
             onComplete: function() {
                 shiftPoint(p);
             }});
@@ -172,7 +172,7 @@
             if(!_this.active) return;
             ctx.beginPath();
             ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(176,198,223,0.3'+ _this.active+')';
+            ctx.fillStyle = 'rgba(176,198,223,0.7'+ _this.active+')';
 			ctx.strokeStyle = 'rgba(176,198,223,)';
 			ctx.stroke();
 			ctx.fill();
