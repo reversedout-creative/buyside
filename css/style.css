@@ -302,7 +302,7 @@ body {
 	z-index: 5;
 	content: ' ';
 	position: absolute;
-	top: -800px;
+	top: -850px;
 	left: -20px;
 	right: 0;
 	border-radius: 50%;
@@ -1456,7 +1456,7 @@ ul.slimmenu li.has-submenu:hover i{
 	margin: 0 auto;
 	text-align: center;
 	z-index: 40;
-	height: 204px;
+	height: 219px;
 	overflow: hidden;
 	max-width: 1024px;
 	width: 100%;
@@ -1491,6 +1491,32 @@ ul.slimmenu li.has-submenu:hover i{
 	min-height: 70px;
 	padding-top: 15px;
 }
+
+.zoom #f1_container,
+.zoom .ipaid-image {
+	-webkit-transform: scale(1.12);
+	   -moz-transform: scale(1.12);
+		 -o-transform: scale(1.12);
+	    	transform: scale(1.12);
+}
+.zoom .ipaid-image {
+	margin-top:16px;
+}
+.zoom #f1_container {
+	padding-top: 3px;
+}
+#f1_container,
+.ipaid-image,
+.zoom #f1_container,
+.zoom .ipaid-image {
+	-webkit-transition: all 0.5s ease-in-out;
+       -moz-transition: all 0.5s ease-in-out;
+         -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+
+
+
 @media(max-width: 1200px){
 	.hide-1200 { display: none;	}
 	.hero-banner.internal-banner { padding-bottom: 100px; }
@@ -1535,6 +1561,17 @@ ul.slimmenu li.has-submenu:hover i{
 		margin-top: 20px;
 		padding-bottom: 40px;
 	}
+	.zoom #f1_container,
+	.zoom .ipaid-image {
+		-webkit-transform: scale(1.12);
+		   -moz-transform: scale(1.12);
+			 -o-transform: scale(1.12);
+				transform: scale(1.12);
+	}
+	.zoom .ipaid-image {
+		margin-top:16px;
+	}
+	.zoom #f1_container { padding-top: 3px; }
 }
 @media(max-width: 991px){
 	.rollover-internal-page.rollover-all-box .rollover:nth-child(2) {
@@ -1822,10 +1859,6 @@ ul.slimmenu li.has-submenu:hover i{
 		max-width: 238px;
 	}
 }
-
-
-
-
 
 
 

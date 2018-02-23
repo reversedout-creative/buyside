@@ -130,7 +130,7 @@
 	<div class="container">
     <div class="row">
         
-        <div class="col-md-6 order-md-6 lap-image text-center wow zoomIn animated">
+        <div class="col-md-6 order-md-6 lead-img lap-image text-center wow zoomIn animated">
         	<div id="f1_container">            
             	<div class="flip_container">
                     <div class="flip">
@@ -152,10 +152,10 @@
     </div>
     <!-- Line Svg -->
     <div id="New_Line" class="hide-1200">
-            <svg version="1.1" id="layer_3" x="0px" y="0px" xml:space="preserve" style="margin: 0 auto;display: block;" width="450" enable-background="new 0 0 500 500" height="250" viewBox="0 0 500 500">
+            <svg version="1.1" id="layer_3" x="0px" y="0px" xml:space="preserve" style="margin: 0 auto;display: block;" width="450" enable-background="new 0 0 500 500" height="300" viewBox="0 0 500 500">
             <g class="all">	 
                 <!-- Line -->	
-                <line id="line5" stroke-width="2" stroke-miterlimit="1" fill="#f00" class="st0" stroke-dasharray="1140.175425099138" stroke-dashoffset="843.0874622211937" x1="480" x2="0" height="400px" y1="0" y2="410"></line>
+                <line id="line5" stroke-width="2" stroke-miterlimit="1" fill="#f00" class="st0" stroke-dasharray="1140.175425099138" stroke-dashoffset="843.0874622211937" x1="412" x2="0" height="400px" y1="60" y2="410"></line>
             </g>
         </svg>
         
@@ -198,7 +198,7 @@
     </div>
     <div id="New_Line2" class="hide-1200">
     
-    <svg version="1.1" id="layer_4" x="0px" y="0px" xml:space="preserve" style="margin: 0 auto;display: block;" width="450" enable-background="new 0 0 500 500" height="250" viewBox="0 0 500 500">
+    <svg version="1.1" id="layer_4" x="0px" y="0px" xml:space="preserve" style="margin: 0 auto; display: block;" width="450" enable-background="new 0 0 500 500" height="250" viewBox="0 0 500 500">
             <g class="all">	 
                 <!-- Line -->	
                 <line id="line6" stroke-width="2" stroke-miterlimit="1" fill="#f00" class="st0" stroke-dasharray="1140.175425099138" stroke-dashoffset="843.0874622211937" x1="20" x2="900" height="400px" y1="0" y2="660"></line>
@@ -338,10 +338,10 @@
     <!-- Scroll Animation Script -->
 	<script>
         var scrollBehaviour = [
-			{id: 'line1', startPct: 0, endPct: 22.4}, // One
-			{id: 'line2', startPct: 5, endPct: 22.4}, // Two
-			{id: 'line3', startPct: 5, endPct: 25}, // three 
-			{id: 'line4', startPct: 0, endPct: 25}, // Four 
+			{id: 'line1', startPct: 0, endPct: 15}, // One
+			{id: 'line2', startPct: 0, endPct: 22}, // Two
+			{id: 'line3', startPct: 0, endPct: 30}, // three 
+			{id: 'line4', startPct: 0, endPct: 35}, // Four 
 			
 			{id: 'line5', startPct: 40, endPct: 60}, // Four 
 			{id: 'line6', startPct: 60, endPct: 80}, // Four 
@@ -414,6 +414,18 @@
 		  }
 		  // If you use other elem types, you will have to add support for them here.
 		}
+    </script>
+    
+    <script>
+	$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();    
+    if (scroll >= 380) {
+        $(".lead-img").addClass("zoom");
+    }
+	else {
+		$(".lead-img").removeClass("zoom");
+	}
+});
     </script>
 </body>
 </html>
