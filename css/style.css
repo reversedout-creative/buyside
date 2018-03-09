@@ -2017,6 +2017,9 @@ h2.bold {
 .contain-section ul li {
 	list-style: outside;
 }
+.contain-section.top-border {
+	padding-top: 0;
+}
  
 @media(max-width: 1200px) {
 	.internal-banner.bottom-spacing { padding-bottom: 150px; }
@@ -2073,4 +2076,8 @@ h2.bold {
 		line-height: 18px;
 	}
 	.internal-banner.bottom-spacing { padding-bottom: 100px; }
+	.top-border::before {
+		height: 70px;
+		top: -65px;
+	}
 }
