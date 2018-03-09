@@ -12,7 +12,7 @@
 		jQuery(".go-up").click(function(){
 		jQuery("html,body").animate({scrollTop:0},500);
 		return false;
-	 });
+	});
  
 
 	/* Slime Menu */
@@ -78,12 +78,7 @@
     });
 	
 	
-	
-		
-	  
-	
-	
-	
+(function($) {
 	/* --------------------------------------------------
 	 * document ready
 	 * --------------------------------------------------*/
@@ -98,6 +93,7 @@
 			/* go to anchor */
 		});
 	});
+})(jQuery);
 	
 	/* WOW */
 	wow = new WOW(
@@ -111,8 +107,7 @@
     );
     wow.init();
 	/* END WOW */
-	
-	
+
 	/* Search Box Filters JS*/
 	$(document).ready(function(){
 		$("#fliter_menu").click(function(){

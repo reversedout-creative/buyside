@@ -37,7 +37,7 @@
             <ul class="slimmenu">                    
                 <li class="active"><a href="how_it_works.html">How It Works</a></li>
                 <li><a href="#1">Why Buyside</a></li>
-                <li><a href="#1">About Us</a></li>
+                <li><a href="about_us.html">About Us</a></li>
                 <li><a href="#1">Resources</a></li>
                 <li><a href="#1">contact</a></li>
             </ul>                
@@ -112,13 +112,13 @@
 <svg version="1.1" id="Layer_2" x="0px" y="0px" height="600px" viewBox="0 0 1000 600" enable-background="new 0 0 946 582.25" xml:space="preserve">
 	<g class="all">
 		<!-- Line 1 -->	
-		<line id="line1" stroke-width="2" stroke-miterlimit="1" fill="#f00" height="800px"  x1="-19" y1="230" x2="995" y2="700" class="st0"/>	
+		<line id="line1" stroke-width="2" stroke-miterlimit="1" fill="#f00" height="800px"  x1="-30" y1="225" x2="995" y2="700" class="st0"/>	
 		<!-- Line 2 -->	
-		<line id="line2" stroke-width="2" stroke-miterlimit="1" fill="#f00" height="650px"  x1="360" y1="350" x2="950" y2="700" class="st0"/>	
+		<line id="line2" stroke-width="2" stroke-miterlimit="1" fill="#f00" height="650px"  x1="355" y1="350" x2="950" y2="700" class="st0"/>	
 		<!-- Line 3 -->	
-		 <line id="line3" stroke-width="2" stroke-miterlimit="1" fill="#f00" height="650px"  x1="767" y1="280" x2="780" y2="800" class="st0"/>	 
+		 <line id="line3" stroke-width="2" stroke-miterlimit="1" fill="#f00" height="650px"  x1="764" y1="280" x2="782" y2="800" class="st0"/>	 
 		<!-- Line 4 -->	
-		<line id="line4" stroke-width="2" stroke-miterlimit="1" fill="#f00" height="650px"  x1="922" y1="150" x2="715" y2="800" class="st0"/>		
+		<line id="line4" stroke-width="2" stroke-miterlimit="1" fill="#f00" height="650px"  x1="922" y1="150" x2="712" y2="800" class="st0"/>		
 	</g>
 </svg>
 </div>
@@ -301,6 +301,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Banner Animation -->
+    <script src="js/TweenLite.min.js"></script>
+	<script src="js/EasePack.min.js"></script>
+    <script src="js/demo-1.js"></script>
     <!-- Menu JavaScript -->
     <script src="js/jquery.slimmenu.js"></script> 
     <!-- OWL Slider JavaScript -->
@@ -309,10 +313,6 @@
     <script src="js/simpleparallax.js"></script>
     <!-- WOW Script -->
     <script src="js/wow.min.js"></script>
-    <!-- Banner Animation -->
-    <script src="js/TweenLite.min.js"></script>
-	<script src="js/EasePack.min.js"></script>
-    <script src="js/demo-1.js"></script>
 
     <!-- Custom Script -->
     <script src="js/custom.js"></script>
@@ -330,11 +330,6 @@
 	});
     </script>
     
-    <script>
-		$('.hover img').hover(function(){ 
-		  $('.hover h5').toggleClass('show-text');
-		});
-    </script>
     <!-- Scroll Animation Script -->
 	<script>
         var scrollBehaviour = [
@@ -417,6 +412,7 @@
     </script>
     
     <script>
+	/* ----- Scroll to Zoom Ipad ----- */	
 	$(window).scroll(function() {    
 		var scroll = $(window).scrollTop();    
 		if (scroll >= 380) {
@@ -426,6 +422,18 @@
 			$(".lead-img").removeClass("zoom");
 		}
 	});
+	/* ----- Scroll to add class Banner h5 ----- */
+	$('.hover img').hover(function(){ 
+		$('.hover h5').toggleClass('show-text');
+	});
+	
+	$(window).scroll(function() {    
+		var scroll = $(window).scrollTop();    
+		if (scroll >= 50) {
+			$(".hover h5").addClass("show");
+		}
+	});
+	
     </script>
 </body>
 </html>
