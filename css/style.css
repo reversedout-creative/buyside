@@ -1559,6 +1559,7 @@ ul.slimmenu li.has-submenu:hover i{
 
 @media(max-width: 1200px){
 	.hide-1200 { display: none;	}
+	.hero-banner { padding-bottom: 100px; }
 	.hero-banner.internal-banner { padding-bottom: 100px; }
 	.services .service-icon {
 		height: 54px;
@@ -1654,6 +1655,7 @@ ul.slimmenu li.has-submenu:hover i{
 		border-bottom: solid 60px transparent;
 		border-top: solid 0px transparent;
 	}
+	
 }
 
 @media(max-width: 767px){
@@ -1750,6 +1752,7 @@ ul.slimmenu li.has-submenu:hover i{
 		font-size: 20px;
 		line-height: 28px;
 	}
+	.hero-banner { padding-bottom: 80px; }
 }
 @media(max-width: 575px){
 	.rollover-internal-page {
@@ -1791,7 +1794,7 @@ ul.slimmenu li.has-submenu:hover i{
 	}
 	.more-sides.services { padding-bottom: 20px; }
 	.rollover-internal-page.rollover-all-box .rollover h5 { padding-top: 15px !important; }
-
+	.hero-banner { padding-bottom: 50px; }
 }
 @media(max-width: 420px){
 	.rollover-internal-page.rollover-all-box .rollover h5 {
@@ -2016,10 +2019,15 @@ h2.bold {
 }
 .contain-section ul li {
 	list-style: outside;
+	line-height: 24px;
+	padding: 3px;
+	font-weight: 300;
 }
 .contain-section.top-border {
 	padding-top: 0;
 }
+.contain-section a { color: #1a63b4; }
+.contain-section a:hover { color: #30d7c6; }
  
 @media(max-width: 1200px) {
 	.internal-banner.bottom-spacing { padding-bottom: 150px; }
