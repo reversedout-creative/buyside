@@ -2330,3 +2330,192 @@ h2.bold {
 		padding-bottom: 10px;
 	}
 }
+
+/*Blog*/
+.blog_sections{margin-bottom: 95px;}
+.blogsidebar .sidebox{margin-bottom: 35px;}
+.blogsidebar .sidebox h3{
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0;
+    margin-bottom: 20px;
+    }
+.blogsidebar .sidebox h3 span{
+    font-weight: 400;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding-right: 10px;
+    }
+.blogsidebar .sidebox h3:after{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #d8d8d8;
+    z-index: 0;
+    }
+.blogsidebar .sidebox ul{
+    margin: 0;
+    padding: 0;
+}
+.blogsidebar .sidebox ul li{
+    display: block;
+    list-style: none;
+    font-weight: 500;
+    padding: 8px 0;
+    color: #707070;
+    }
+.blogsidebar .sidebox ul li span{
+    padding-left: 10px; 
+    }
+.blogsidebar .sidebox ul li a{
+    color: #707070;
+    }
+.blogsidebar .sidebox ul li:hover a{
+    color: #4a90e2;
+    }
+.blogsidebar .sidebox ul li.active a{ color:#4a90e2;}
+.custom-control-label::before {
+    background-color: #fff;
+    border: solid 1px #e6e8ed;
+    }
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #359be0;
+    border: solid 1px #359be0;
+    }
+.blogsidebar .sidebox.recent_post ul li {
+    overflow: hidden;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.blogsidebar .sidebox.recent_post ul li .img{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    }
+.blogsidebar .sidebox.recent_post ul li .img img{
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    }
+.blogsidebar .sidebox.recent_post ul li .text_box{
+    display: block;
+    overflow: hidden;
+    }
+.blogsidebar .sidebox.recent_post ul li .text_box h4{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 5px;
+    }
+.blogsidebar .sidebox.recent_post ul li .text_box h4 a{
+    color: #000;
+    }
+.blogsidebar .sidebox.recent_post ul li .text_box .othar{
+    color: #7e7e7e;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 0;
+    }
+.blogsidebar .sidebox.recent_post ul li:hover .text_box h4 a{color: #359be0;}
+
+.blog-post{
+       position: relative;
+    margin-bottom: 20px;
+}
+.blog-post .fitimg {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    background-color: transparent;
+    }
+.blog-post .fitimg img {
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    position: relative; 
+    -webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;	
+    } 
+.blog-post .blog-cont {
+    padding: 10px 0px;
+    display: block;
+    }
+.blog-post .blog-cont h3 {
+    padding-top: 0;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: capitalize;
+    }
+.blog-post .blog-cont h3 a {color: #2b2b2b;}
+.blog-post .blog-cont h3 a:hover{color: #4ea2d4;}
+.blog-post .blog-cont p {
+    margin-bottom: 20px;
+    color: #707070;
+    font-weight: 400;
+    } 
+ 
+.blog-post.page .blog-cont .othar_time {
+    color: #626262;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 400;
+    display: block;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    }
+.blog-post.page .blog-cont .othar_time span{
+    padding: 5px;
+    display: inline-block;
+    }  
+ul.pagination{
+    margin-left:0;
+}
+ul.pagination li{
+    list-style:none;
+}
+ul.pagination li a{
+    color:#1a63b4;
+    font-size:14px;
+}
+@media(max-width: 991px){
+    ul.pagination{margin-bottom: 30px;}
+    .blog-post .fitimg {
+        height: 300px;
+    }
+    .blog-post .blog-cont h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+@media(max-width: 767px){
+    .blog-post .fitimg {
+        height: 250px;
+    }
+    .blog-post .blog-cont h3 {
+        font-size: 21px;
+        line-height: 28px;
+    }
+}
