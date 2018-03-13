@@ -2461,7 +2461,7 @@ h2.bold {
     padding: 10px 0px;
     display: block;
     }
-.blog-post .blog-cont h3 {
+.blog-post h3 {
     padding-top: 0;
     font-size: 28px;
     line-height: 36px;
@@ -2469,15 +2469,15 @@ h2.bold {
     margin: 0;
     text-transform: capitalize;
     }
-.blog-post .blog-cont h3 a {color: #2b2b2b;}
-.blog-post .blog-cont h3 a:hover{color: #4ea2d4;}
+.blog-post h3 a {color: #2b2b2b;}
+.blog-post h3 a:hover{color: #4ea2d4;}
 .blog-post .blog-cont p {
     margin-bottom: 20px;
     color: #707070;
     font-weight: 400;
     } 
  
-.blog-post.page .blog-cont .othar_time {
+.blog-post.page .othar_time {
     color: #626262;
     font-size: 12px;
     line-height: 21px;
@@ -2486,7 +2486,7 @@ h2.bold {
     padding-bottom: 5px;
     text-transform: uppercase;
     }
-.blog-post.page .blog-cont .othar_time span{
+.blog-post.page .othar_time span{
     padding: 5px;
     display: inline-block;
     }  
@@ -2519,3 +2519,110 @@ ul.pagination li a{
         line-height: 28px;
     }
 }
+
+/**/
+.single-page h2 {
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: none;
+    font-weight: 500;
+	padding:0;
+	color:#2b2b2b;
+}
+.single-page .othar_time{
+	margin:15px 0;
+}
+.single-page blockquote{
+	font-size:24px;
+	line-height:32px;
+	color:#707070;
+	margin-bottom:20px;
+	font-family:initial;
+}
+.email-reply h3 {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight:500;
+	color: #000;
+	padding-bottom:0;
+}
+.email-reply ul li{
+	list-style:none;
+}
+.email-reply {display:inline-block;}
+.email-reply textarea{
+	border-radius:5px;		
+}
+.email-reply input[type="text"],
+.email-reply input[type="email"]{
+	height:50px;
+	border-radius:5px;
+	color:#7b7b7b;
+}
+.email-reply textarea{height:150px;}
+.email-reply textarea:focus,
+.email-reply input[type="text"]:focus,
+.email-reply input[type="email"]:focus{
+	border-color: #1a63b4;
+	box-shadow: none;
+}
+.related-story{margin-top:50px;}
+.related-story .sidebox{position:relative;}
+.related-story .sidebox a{
+    font-weight: 400;
+    background-color: white;
+    position: absolute;
+	right:0;
+	top:0;
+	font-size:12px;
+	line-height:22px;
+	text-transform:uppercase;
+	letter-spacing:3px;
+    z-index: 1;
+    padding-left: 10px;
+}
+.related-story .blog-post .fitimg{
+	height:220px;
+}
+.related-story .blog-post h3{
+	font-size:24px;
+	line-height:32px;
+}
+@media(max-width:991px){
+	.single-page h2{
+		font-size:30px;
+		line-height:38px;
+	}
+	.related-story .blog-post .fitimg {
+		height: 160px;
+	}
+	.related-story .blog-post h3{
+		font-size:20px;
+		line-height:28px;
+	}
+}
+@media(max-width:767px){
+	.related-story .blog-post .fitimg {
+		height: 250px;
+	}
+}
+@media(max-width:320px){
+	.related-story .blog-post .fitimg {
+		height: 160px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
