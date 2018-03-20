@@ -1358,10 +1358,10 @@ ul.slimmenu li.has-submenu:hover i{
 	left: 0;
 }
 .rollover-internal-page .rollover .hover h5.show { opacity: 1; }
-.rollover-internal-page.rollover-all-box .rollover:nth-child(4) { width: 450px; left: 50%; }
-.rollover-internal-page.rollover-all-box .rollover:nth-child(1) { top: 0; }
+.rollover-internal-page.rollover-all-box .rollover:nth-child(4) { width: 450px; left: 58%; }
+.rollover-internal-page.rollover-all-box .rollover:nth-child(1) { top: 50px; left: 0; }
 .rollover-internal-page.rollover-all-box .rollover:nth-child(2) { top: 120px; left: 35%; }
-.rollover-internal-page.rollover-all-box .rollover:nth-child(3) { top: 60px; left: 55%; }
+.rollover-internal-page.rollover-all-box .rollover:nth-child(3) { top: 50px; left: 60%; }
 
 .rollover-internal-page.rollover-all-box .rollover:nth-child(4) h5 {
 	left: 15px;
@@ -2612,17 +2612,326 @@ ul.pagination li a{
 	}
 }
 
+/*Why Buyside*/
+.why_buyside{
+    -ms-transform: skew(0deg,-2deg); /* IE 9 */
+    -webkit-transform: skew(0deg,-2deg); /* Safari */
+    transform: skew(0deg,-2deg); /* Standard syntax */
+	position: relative;
+	z-index:10; 
+    margin-top: -35px;
+    padding: 0;
+    overflow: hidden;
+    }
+.why_buyside .row {
+    -ms-transform: skew(0deg,2deg); /* IE 9 */
+    -webkit-transform: skew(0deg,2deg); /* Safari */
+    transform: skew(0deg,2deg); /* Standard syntax */
+	position: relative;
+	z-index: 10;
+    } 
+.why_buyside h2{
+    font-size: 42px;
+    line-height: 42px;
+    }
+.why_buyside h4{
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: inherit;
+    letter-spacing: 0;
+    }
+.text_side{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 540px;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    }
+.align_right{
+    text-align: right;
+    }
+.text_side h4:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    }
 
+.why_buyside.section_1{
+    background-color: #f8f8f8; 
+    }
+.why_buyside.section_1 .img img{
+    margin-top: -50px;
+    width: 100%;
+    height: auto;
+    }
+.why_buyside.section_1 p,
+.why_buyside.section_1 h4{color: #3f96c9;}
 
+.why_buyside.section_2{
+    background-color: #0d2142; 
+    }
+.why_buyside.section_2 .text_side{
+    padding-top: 70px;
+    padding-bottom: 120px;
+    }
+.why_buyside.section_2 .img img{
+    margin-bottom: -50px;
+    width: 100%;
+    height: auto;
+    }
+.why_buyside.section_2 p{color: #fff;}
+.why_buyside.section_2 h4{color: #3f96c9;}
 
+.why_buyside.section_3{
+    background-color: #fff; 
+    }
+.why_buyside.section_3 .text_side{
+    padding-top: 40px;
+    padding-bottom: 110px;
+    }
+.why_buyside.section_3 .img img{
+    margin-top: -70px;
+    width: 100%;
+    height: auto;
+    }
+.why_buyside.section_3 h2{
+    color: #3f96c9;
+    line-height: 48px;
+    }
+.why_buyside.section_3 h2 span{
+    font-weight: 700;
+    }
+.why_buyside.section_3 p.quote{
+    color: #3f96c9;
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 0px;
+}
+.why_buyside.section_3 p.quote_name{
+    color: #3f96c9;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
+.why_buyside.section_4 {
+    -ms-transform: skew(0deg,2eg); /* IE 9 */
+    -webkit-transform: skew(0deg,2deg); /* Safari */
+    transform: skew(0deg,2deg); /* Standard syntax */ 
+    margin-top: -70px; 
+    background-color: #3f96c9; 
+    z-index: 11;
+    }
+.why_buyside.section_4 .row {
+    -ms-transform: skew(0deg,-2deg); /* IE 9 */
+    -webkit-transform: skew(0deg,-2deg); /* Safari */
+    transform: skew(0deg,-2deg); /* Standard syntax */ 
+    }
+.why_buyside.section_4 .text_side{
+    padding-top: 55px;
+    padding-bottom: 45px;
+    }
+.why_buyside.section_4 .img img{
+    margin-top: -30px;
+    width: 100%;
+    height: auto;
+    }
+.why_buyside.section_4 h2{
+    color: #fff;
+    line-height: 48px;
+    }
+.why_buyside.section_4 h2 span{
+    font-weight: 700;
+    }
+.why_buyside.section_4 p{color: white;}
+.why_buyside.section_4 p.quote{
+    color: #b5d8ed;
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 0px;
+}
+.why_buyside.section_4 p.quote_name{
+    color: #b5d8ed;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
+.why_buyside.section_5 { 
+    background-color: #ececec; 
+    margin-top: -60px;
+    } 
+.why_buyside.section_5 .text_side{
+    padding-top: 85px;
+    padding-bottom: 30px;
+    }
+.why_buyside.section_5 .img img{  
+    width: 100%;
+    height: auto;
+    margin-bottom: -40px;
+    }
+.why_buyside.section_5 h2{
+    color: #3f96c9;
+    line-height: 48px;
+    }
+.why_buyside.section_5 h2 span{
+    font-weight: 700;
+    }
+.why_buyside.section_5 p{color: #0d2142;}
+.why_buyside.section_5 p.quote{
+    color: #3f96c9;
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 0px;
+}
+.why_buyside.section_5 p.quote_name{
+    color: #3f96c9;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
+.videoslider_holder{
+     position: relative;
+}
+.videoslider_holder:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+     content: '';
+    width: 30%;
+    height: 100%;
+    z-index: 1;
+        background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); 
+}
+.videoslider_holder:before{
+    position: absolute;
+    right: 0;
+    top: 0;
+     content: '';
+    width: 30%;
+    height: 100%;
+    z-index: 1;
+        background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,1) 100%);
+background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
 
+}
+#video_testimonials .item{
+    padding: 10px;
+}
+.video_testimonials{
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.video_testimonials h4{
+    text-align: center;
+}
+@media(max-width:1199px){
+    .why_buyside h2{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .why_buyside h4 {
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .why_buyside.section_4 .text_side{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .why_buyside.section_5 .text_side{
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+}
+@media(max-width:1025px){
+.why_buyside{
+    -ms-transform: skew(0deg,0deg); /* IE 9 */
+    -webkit-transform: skew(0deg,0deg); /* Safari */
+    transform: skew(0deg,0deg); /* Standard syntax */
+	margin-top: 0px;
+    }
+.why_buyside .row {
+    -ms-transform: skew(0deg,0deg); /* IE 9 */
+    -webkit-transform: skew(0deg,0deg); /* Safari */
+    transform: skew(0deg,0deg); /* Standard syntax */
+    } 
+.why_buyside.section_1 .img img{margin-top: 0px;}
+.why_buyside.section_2 .img img {margin-bottom: 0;}
+.why_buyside.section_2 .text_side {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+.why_buyside.section_3 .text_side{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+.why_buyside.section_3 .img img{margin-top: 0px;}
+    
+.why_buyside.section_4 {
+    -ms-transform: skew(0deg,0eg); /* IE 9 */
+    -webkit-transform: skew(0deg,0deg); /* Safari */
+    transform: skew(0deg,0deg); /* Standard syntax */ 
+    margin-top: 0px; 
+    }
+.why_buyside.section_4 .row {
+    -ms-transform: skew(0deg,0deg); /* IE 9 */
+    -webkit-transform: skew(0deg,0deg); /* Safari */
+    transform: skew(0deg,0deg); /* Standard syntax */ 
+    }
+.why_buyside.section_4 .text_side{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+.why_buyside.section_4 .img img{
+    margin-top: 0px;
+    height: 450px;
+    width: auto;
+    max-width: inherit;
+    }
+.why_buyside.section_5 .text_side{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+.why_buyside.section_5 .img img {
+    margin-bottom: 0px;
+    height: 500px;
+    width: auto;
+    }
+ .why_buyside.section_5 {
+    margin-top: 0;
+    }
+    .why_buyside h2{
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
 
-
-
-
-
-
-
+@media(max-width:991px){ 
+.why_buyside.section_4 .img img{
+    height: auto;
+    width: 100%;
+    } 
+.why_buyside.section_5 .img img {
+    height: auto;
+    width: 100%;
+    }
+ .text_side {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    }
+.why_buyside.section_2 .text_side {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    .why_buyside h2{
+        font-size: 28px;
+        line-height: 28px;
+    }
+}
