@@ -51,6 +51,30 @@
 		$(".play").click(function(){ owl.trigger('owl.play',1000); })
 		$(".stop").click(function(){ owl.trigger('owl.stop');      })
     });
+    
+    // video testimonials
+    $(document).ready(function() {
+    	var owl = $("#video_testimonials");
+		owl.owlCarousel({
+		stopOnHover : true,
+		navigation: false,
+		autoPlay : true,
+		autoHeight : false,
+        center: true,
+        loop: true,
+		items : 1, 
+		itemsDesktop : [1200,1], //5 items between 1000px and 901px
+		itemsDesktopSmall : [991,1], // 3 items betweem 900px and 601px
+		itemsTablet: [600,1], //2 items between 600 and 0;
+		itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+	});
+
+	// Custom Navigation Events
+    	$(".next").click(function(){ owl.trigger('owl.next');      })
+      	$(".prev").click(function(){ owl.trigger('owl.prev');      })
+		$(".play").click(function(){ owl.trigger('owl.play',1000); })
+		$(".stop").click(function(){ owl.trigger('owl.stop');      })
+    });
 	
 	
 	// Testimonials Slider
