@@ -30,7 +30,7 @@
 		});
 	});
 	
-	// Our Customer
+    // Our Customer
     $(document).ready(function() {
     	var owl = $("#Customers");
 		owl.owlCarousel({
@@ -84,7 +84,7 @@
 		stopOnHover : true,
 		navigation: true,
 		autoPlay : 4000,
-		autoHeight : false,
+		autoHeight : true,
 		loop : true,
 		singleItem:true,
 		items :1, 
@@ -101,6 +101,29 @@
 		$(".stop").click(function(){ owl.trigger('owl.stop');      })
     });
 	
+    // Why Buyside Slider
+    $(document).ready(function() {
+    	var owl = $("#why_buyside_slider");
+		owl.owlCarousel({
+        singleItem : true,
+		stopOnHover : true,
+		navigation: true,
+		autoPlay : false,
+		autoHeight : true,
+        pagination: false,
+        slideSpeed : 1500,
+		items : 1, 
+        mouseDrag : false,
+        touchDrag : true,
+		itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+	});
+        
+    // Custom Navigation Events
+    	$(".next").click(function(){ owl.trigger('owl.next');      })
+      	$(".prev").click(function(){ owl.trigger('owl.prev');      })
+		$(".play").click(function(){ owl.trigger('owl.play',1000); })
+		$(".stop").click(function(){ owl.trigger('owl.stop');      })
+    });
 	
 (function($) {
 	/* --------------------------------------------------
