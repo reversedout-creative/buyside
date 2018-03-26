@@ -564,7 +564,7 @@ ul.slimmenu li.has-submenu:hover i{
 }
 .rollover-all-box .rollover:nth-child(4) {
 	left: 78%; width: 250px;
-	top: -80px;
+	top: -30px;
 }
 .rollover-all-box .rollover:nth-child(4) img,
 .rollover-all-box .rollover:nth-child(3) img { float: right; }
@@ -1375,7 +1375,7 @@ ul.slimmenu li.has-submenu:hover i{
 	left: 0;
 }
 .rollover-internal-page .rollover .hover h5.show { opacity: 1; }
-.rollover-internal-page.rollover-all-box .rollover:nth-child(4) { width: 450px; left: 58%; }
+.rollover-internal-page.rollover-all-box .rollover:nth-child(4) { width: 450px; left: 60%; }
 .rollover-internal-page.rollover-all-box .rollover:nth-child(1) { top: 50px; left: 0; }
 .rollover-internal-page.rollover-all-box .rollover:nth-child(2) { top: 120px; left: 35%; }
 .rollover-internal-page.rollover-all-box .rollover:nth-child(3) { top: 50px; left: 60%; }
@@ -1558,7 +1558,7 @@ ul.slimmenu li.has-submenu:hover i{
 	margin-top:16px;
 }
 .zoom #f1_container {
-	padding-top: 3px;
+	padding-top: 16px;
 }
 #f1_container,
 .ipaid-image,
@@ -1862,13 +1862,20 @@ ul.slimmenu li.has-submenu:hover i{
 
 #f1_container {
 	position: absolute;
-	top: 20px;
+	top: 16px;
 	left: 0;
 	right: 0;
-	margin: 10px auto;
+	margin: 12px auto;
 	width: 100%;
+    height: 220px;
 	max-width: 292px;
 	z-index: 10;
+}
+#f1_container.second {
+	margin: 14px auto;
+}
+#f1_container.thard{
+	margin: 14px auto;
 }
 #f1_container {
 	perspective: 1000;
@@ -1912,13 +1919,15 @@ ul.slimmenu li.has-submenu:hover i{
 
 @media(max-width: 991px){
 	#f1_container {
-		top: 17px;
+		top: 16px;
 		max-width: 273px;
 	}
+    #f1_container.second {margin: 12px auto;}
+    #f1_container.thard {margin: 12px auto;}
 }
 @media(max-width: 767px){
 	#f1_container {
-		top: 20px;
+		top: 18px;
 		max-width: 292px;
 	}
 }
@@ -2901,4 +2910,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
         font-size: 28px;
         line-height: 28px;
     }
+} 
+ 
+
+.card {
+	width: 292px;
+	height: 220px;
+	padding: 0px;
+	margin: 16px auto 0 auto;
+} 
+
+.front,
+.back {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	background-color: transparent;
+	border-radius: 0px;
 }
